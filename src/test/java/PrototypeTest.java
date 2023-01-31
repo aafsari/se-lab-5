@@ -1,3 +1,6 @@
+import Prototype.App;
+import Prototype.Program;
+import Prototype.Virus;
 import org.junit.Assert;
 import org.junit.Test;
 
