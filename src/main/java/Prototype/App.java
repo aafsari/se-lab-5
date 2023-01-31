@@ -11,10 +11,12 @@ public class App extends Program{
 
     @Override
     public Program clone() {
-        return this;
+        return new App(this.name, this.version, this.author);
     }
 
     public boolean equals(Program p) {
-        return false;
+        if (p.getClass() != App.class)
+            return false;
+        return p.name.equals(this.name)  && p.version.equals(this.version) && this.author.equals(((App )p).author);
     }
 }
