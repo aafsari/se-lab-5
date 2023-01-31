@@ -2,7 +2,7 @@ import AbstractFactory.*;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class AbstractFactoryTests {
+public class AbstractFactoryTest {
 
     @Test
     public void shouldCreateIranianTree(){
