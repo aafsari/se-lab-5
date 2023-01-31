@@ -1,5 +1,7 @@
 package AbstractFactory;
 
 public abstract class AbstractGardenFactory {
-    c
+    public abstract Tree createTree();
+    public abstract Flower createFlower();
+
 }
