@@ -4,14 +4,27 @@ import org.junit.Test;
 public class PrototypeTest {
 
     @Test
-    public void shouldReturnSimilarData(){
-        Program program = new Program("flash", "1.4", "adobe");
+    public void shouldReturnSimilarAppData(){
+        Program program = new App("flash", "1.4", "adobe");
         Assert.assertTrue(program.equals(program.clone()));
     }
 
     @Test
-    public void shouldReturnDifferentPointer(){
-        Program program = new Program("flash", "1.4", "adobe");
+    public void shouldReturnDifferentAppPointer(){
+        Program program = new App("flash", "1.4", "adobe");
+        Assert.assertNotSame(program, program.clone());
+    }
+
+
+    @Test
+    public void shouldReturnSimilarVirusData(){
+        Program program = new Virus("iloveyou", "0.4");
+        Assert.assertTrue(program.equals(program.clone()));
+    }
+
+    @Test
+    public void shouldReturnDifferentVirusPointer(){
+        Program program = new Virus("iloveyou", "0.4");
         Assert.assertNotSame(program, program.clone());
     }
 
