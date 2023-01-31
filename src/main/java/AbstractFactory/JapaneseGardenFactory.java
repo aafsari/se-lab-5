@@ -3,11 +3,11 @@ package AbstractFactory;
 public class JapaneseGardenFactory extends AbstractGardenFactory{
     @Override
     public Flower createFlower() {
-        return null;
+        return new JapaneseFlower();
     }
 
     @Override
     public Tree createTree() {
-        return null;
+        return new JapaneseTree();
     }
 }
